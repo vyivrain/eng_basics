@@ -1,0 +1,5 @@
+= form_with model: fib, url: check_item_exist_fib_path(fib), method: :post, data: { remote: false, fib: 'exist' } do |f|
+  .col-lg-10
+    = f.number_field :number, placeholder: 'Enter a number to check if it is in list', class: 'form-control'
+  .col-lg-2
+    = f.submit 'Check', class: 'btn btn-success btn-sm check-button'

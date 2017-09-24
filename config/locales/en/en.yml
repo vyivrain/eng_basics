@@ -1,0 +1,14 @@
+en:
+  fibs:
+    create:
+      success: "Fib was successfully created."
+    destroy:
+      success: "Fib was successfully destroyed."
+    check_items_exist:
+      success: "Number is part of fib list"
+      error: "Number is not part of fib list"
+    check_items_equality:
+      success: "List you've entered is equal to fib list"
+      error: "'List you've entered is not equal to fib list"
+
+

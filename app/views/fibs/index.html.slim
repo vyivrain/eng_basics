@@ -1,0 +1,19 @@
+h1 Listing fibs
+
+table.table.table-bordered.text-center
+  thead
+    tr
+      th.text-center Items
+      th.text-center Actions
+
+  tbody
+    - @fibs.each do |fib|
+      tr
+        td = fib.items
+        td
+          = link_to 'Show', fib, class: 'btn btn-info btn-margin'
+          = link_to 'Delete', fib, data: { confirm: 'Are you sure?' }, method: :delete, class: 'btn btn-danger'
+
+br
+
+= link_to 'New Fib', new_fib_path

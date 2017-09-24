@@ -1,0 +1,5 @@
+= form_with model: fib, url: check_items_equality_fib_path(fib), method: :post, data: { remote: false, fib: 'equal' } do |f|
+  .col-lg-10
+    = f.text_field :list, placeholder: 'Enter list of numbers separated by comma', class: 'form-control'
+  .col-lg-2
+    = f.submit 'Check', class: 'btn btn-success btn-sm check-button'
