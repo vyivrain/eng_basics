@@ -1,14 +1,8 @@
-h2.text-center Fib List
-table.table.table-bordered.text-center
-  thead
-    th.text-center Item List
-    th.text-center Element exists in item list
-    th.text-center Item List equality to another list
-    th.text-center Fib sum square
-  tbody
-    td.show-fibs-list = @fib.items
-    td = render partial: 'show_fibs_exists_form', locals: { fib: @fib }
-    td = render partial: 'show_fibs_list_equal_form', locals: { fib: @fib }
-    td.text-center.fibs-square-text = @fib.known_fibs_sum_of_squares
+= javascript_pack_tag 'fib_show'
+= javascript_pack_tag 'fib_number_exist_form'
 
-= link_to 'Back', root_path
+h2.text-center Fib List
+
+#fib-show-table
+
+= link_to 'Back', root_path, data: { turbolinks_action: "replace", turbolinks: "false" }

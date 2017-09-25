@@ -1,5 +1,3 @@
-= form_with model: @fib, data: { remote: false, fibs: 'new' } do |f|
-  .form-group
-    = f.label :number, 'Generate N fibonacci numbers'
-    = f.number_field :number, class: 'form-control'
-  .actions = f.submit 'Create', class: 'btn btn-success'
+= javascript_pack_tag 'fib_create'
+
+#fib-create-form

@@ -1,4 +1,5 @@
 .container[data-flash-message]
+  #flash-messages
   - flash.each do |name, msg|
     - if msg.is_a?(String)
       div[class=("alert #{name.to_s == 'success' || name.to_s == 'notice' ? 'alert-success' : 'alert-danger'} alert-dismissable") role="alert"]

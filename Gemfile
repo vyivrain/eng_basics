@@ -15,8 +15,11 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'slim-rails'
 gem 'webpacker', '~> 3.0'
+gem 'webpacker-react', "~> 0.3.2"
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'jquery-rails'
+gem 'active_model_serializers'
+gem 'jasmine-rails'
 
 group :development, :test do
   gem 'pry'

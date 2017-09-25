@@ -1,7 +1,7 @@
 en:
   fibs:
     create:
-      success: "Fib was successfully created."
+      success: "We are creating your fib, if it's not there try reloading page after few seconds."
     destroy:
       success: "Fib was successfully destroyed."
     check_items_exist:

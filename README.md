@@ -1,3 +1,12 @@
+## Rails and React
+```
+rake db:create
+rake db:migrate
+rspec
+npm install
+npm test
+```
+
 # Ruby Basics
 
 Goal:
